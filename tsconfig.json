@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		// 编译选项
+		"target": "ES2016", //编译目标代码
+		"module": "commonjs", //编译结果使用的模块化
+		"lib": ["ES2016"],
+		"outDir": "dist", //输出路径
+		"strictNullChecks": true, //严格空值验证
+		"moduleResolution": "Node", // 设置解析模块的模式，一般都用node
+		"noImplicitUseStrict": false, //编译结果中是否包含'use strict'严格模式  true不包含 false包含
+		"removeComments": true, //编译结果是否移除注释 true移除 false不移除
+		"noEmitOnError": true, //错误时不生成编译结果 true不编译  false编译
+		"esModuleInterop": false, //启用es模块化交互非es模块导出方式
+		"strictPropertyInitialization": true, //class中严格检查构造函数初始化
+		"declaration": false, // 生成申明文件
+		"sourceMap": false, // 生成ts的代码地图
+		"experimentalDecorators": true // ?
+	},
+	"exclude": ["./node_modules"] // 排除文件
+}
