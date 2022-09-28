@@ -2,9 +2,8 @@
 	"compilerOptions": {
 		// 编译选项
 		"target": "ES2016", //编译目标代码
-		"module": "commonjs", //编译结果使用的模块化
 		"lib": ["ES2016"],
-		"outDir": "dist", //输出路径
+		"outDir": "lib", //输出路径
 		"strictNullChecks": true, //严格空值验证
 		"moduleResolution": "Node", // 设置解析模块的模式，一般都用node
 		"noImplicitUseStrict": false, //编译结果中是否包含'use strict'严格模式  true不包含 false包含
@@ -16,5 +15,5 @@
 		"sourceMap": false, // 生成ts的代码地图
 		"experimentalDecorators": true // ?
 	},
-	"exclude": ["./node_modules"] // 排除文件
+	"include": ["./script", "./utils"]
 }

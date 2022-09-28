@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		// 编译选项
+		"module": "commonjs" //编译结果使用的模块化
+	}
+}
