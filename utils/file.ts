@@ -8,7 +8,7 @@ interface Filepath {
 
 /**
  * 根据dir向上查找获取文件路径，文件名必须相对向上的文件相对路径
- * @param dir  __dirname
+ * @param dir  __dirname 起始文件路径
  * @param fileName 文件名
  */
 export const getFilePath = async (

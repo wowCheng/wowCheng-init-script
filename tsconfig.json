@@ -3,6 +3,7 @@
 		// 编译选项
 		"target": "ES2016", //编译目标代码
 		"lib": ["ES2016"],
+		"module": "commonjs", //编译结果使用的模块化
 		"outDir": "lib", //输出路径
 		"strictNullChecks": true, //严格空值验证
 		"moduleResolution": "Node", // 设置解析模块的模式，一般都用node

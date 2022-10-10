@@ -4,27 +4,23 @@
 	"description": "wowCheng的初始化script",
 	"author": "wowCheng",
 	"bin": {
-		"initConfig": "node /bin/initConfig"
+		"initConfig": "./bin/initConfig"
 	},
 	"scripts": {
-		"test-initConfig": "pnpm build-all && node ./bin/initConfig",
-		"build-dist": "rollup -c",
-		"build-lib": "tsc -p ./tsconfig-tsc.json",
-		"build-all": "pnpm build-dist && pnpm build-lib"
+		"test-initConfig": "pnpm build:lib && node ./bin/initConfig",
+		"pre-commit": "pnpm build:lib && pnpm update-version",
+		"build:lib": "tsc",
+		"update-version": "node ./lib/script/version"
 	},
 	"license": "ISC",
 	"peerDependencies": {
 		"prettier": "^2.7.1"
 	},
 	"devDependencies": {
-		"@rollup/plugin-node-resolve": "^14.1.0",
-		"@rollup/plugin-typescript": "^8.5.0",
 		"@types/node": "^18.7.18",
+		"husky": "^8.0.1",
 		"prettier": "^2.7.1",
-		"rollup": "^2.79.0",
-		"rollup-plugin-babel": "^4.4.0",
 		"ts-node": "^10.9.1",
-		"tslib": "^2.4.0",
 		"typescript": "^4.8.3"
 	},
 	"repository": {
