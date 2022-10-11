@@ -1,6 +1,6 @@
 {
 	"name": "wowcheng-init-script",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "wowCheng的初始化script",
 	"author": "wowCheng",
 	"bin": {
@@ -26,5 +26,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/wowCheng/wowCheng-init-script"
+	},
+	"dependencies": {
+		"wowcheng-init-script": "link:"
 	}
 }
