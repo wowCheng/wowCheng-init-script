@@ -1,6 +1,6 @@
 {
 	"name": "wowcheng-init-script",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "wowCheng的初始化script",
 	"author": "wowCheng",
 	"bin": {
