@@ -18,7 +18,7 @@ async function updateVersion() {
 		exec("pnpm prettier --write package.json");
 		log.random("😘 update package version!");
 		exec("git add .");
-		exec("git add commit -m 'ci(version): update version 😈'");
+		exec("git commit -m 'ci(version): update version 😈'");
 	}
 }
 updateVersion();
