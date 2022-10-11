@@ -17,8 +17,6 @@ async function updateVersion() {
 		ws.write(JSON.stringify(str));
 		exec("pnpm prettier --write package.json");
 		log.random("😘 update package version!");
-		exec("git add .");
-		exec("git commit -m 'ci(version): update version 😈'");
 	}
 }
 updateVersion();
